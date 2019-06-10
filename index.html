@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+      Dragonwood Probability
+  </title>
+  </head>
+    <style>
+      body {
+        font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        background: white
+      }
+      section {
+          background: grey;
+          color: white;
+          border-radius: 1em;
+          padding: 1em;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%)
+        }
+    </style>
+    <script>
+      function changeProbability() {
+        var probability_array = new Array();
+        for (i = 0; i < 25; i++) {
+          probability_array[i] = new Array();
+        }
+        probability_array[1][1] = 100.0;
+        probability_array[1][2] = 83.33;
+        probability_array[1][3] = 50.0;
+        probability_array[1][4] = 16.67;
+        probability_array[1][5] = 0.0;
+        probability_array[1][6] = 0.0;
+        probability_array[1][7] = 0.0;
+        probability_array[1][8] = 0.0;
+        probability_array[1][9] = 0.0;
+        probability_array[1][10] = 0.0;
+        probability_array[1][11] = 0.0;
+        probability_array[1][12] = 0.0;
+        probability_array[1][13] = 0.0;
+        probability_array[1][14] = 0.0;
+        probability_array[1][15] = 0.0;
+        probability_array[1][16] = 0.0;
+        probability_array[1][17] = 0.0;
+        probability_array[1][18] = 0.0;
+        probability_array[1][19] = 0.0;
+        probability_array[1][20] = 0.0;
+        probability_array[1][21] = 0.0;
+        probability_array[1][22] = 0.0;
+        probability_array[1][23] = 0.0;
+        probability_array[1][24] = 0.0;
+        probability_array[2][1] = 100.0;
+        probability_array[2][2] = 100.0;
+        probability_array[2][3] = 95.24;
+        probability_array[2][4] = 85.71;
+        probability_array[2][5] = 61.9;
+        probability_array[2][6] = 38.1;
+        probability_array[2][7] = 14.29;
+        probability_array[2][8] = 4.76;
+        probability_array[2][9] = 0.0;
+        probability_array[2][10] = 0.0;
+        probability_array[2][11] = 0.0;
+        probability_array[2][12] = 0.0;
+        probability_array[2][13] = 0.0;
+        probability_array[2][14] = 0.0;
+        probability_array[2][15] = 0.0;
+        probability_array[2][16] = 0.0;
+        probability_array[2][17] = 0.0;
+        probability_array[2][18] = 0.0;
+        probability_array[2][19] = 0.0;
+        probability_array[2][20] = 0.0;
+        probability_array[2][21] = 0.0;
+        probability_array[2][22] = 0.0;
+        probability_array[2][23] = 0.0;
+        probability_array[2][24] = 0.0;
+        probability_array[3][1] = 100.0;
+        probability_array[3][2] = 100.0;
+        probability_array[3][3] = 100.0;
+        probability_array[3][4] = 98.21;
+        probability_array[3][5] = 94.64;
+        probability_array[3][6] = 85.71;
+        probability_array[3][7] = 69.64;
+        probability_array[3][8] = 50.0;
+        probability_array[3][9] = 30.36;
+        probability_array[3][10] = 14.29;
+        probability_array[3][11] = 5.36;
+        probability_array[3][12] = 1.79;
+        probability_array[3][13] = 0.0;
+        probability_array[3][14] = 0.0;
+        probability_array[3][15] = 0.0;
+        probability_array[3][16] = 0.0;
+        probability_array[3][17] = 0.0;
+        probability_array[3][18] = 0.0;
+        probability_array[3][19] = 0.0;
+        probability_array[3][20] = 0.0;
+        probability_array[3][21] = 0.0;
+        probability_array[3][22] = 0.0;
+        probability_array[3][23] = 0.0;
+        probability_array[3][24] = 0.0;
+        probability_array[4][1] = 100.0;
+        probability_array[4][2] = 100.0;
+        probability_array[4][3] = 100.0;
+        probability_array[4][4] = 100.0;
+        probability_array[4][5] = 99.21;
+        probability_array[4][6] = 97.62;
+        probability_array[4][7] = 93.65;
+        probability_array[4][8] = 86.51;
+        probability_array[4][9] = 73.81;
+        probability_array[4][10] = 58.73;
+        probability_array[4][11] = 41.27;
+        probability_array[4][12] = 26.19;
+        probability_array[4][13] = 13.49;
+        probability_array[4][14] = 6.35;
+        probability_array[4][15] = 2.38;
+        probability_array[4][16] = 0.79;
+        probability_array[4][17] = 0.0;
+        probability_array[4][18] = 0.0;
+        probability_array[4][19] = 0.0;
+        probability_array[4][20] = 0.0;
+        probability_array[4][21] = 0.0;
+        probability_array[4][22] = 0.0;
+        probability_array[4][23] = 0.0;
+        probability_array[4][24] = 0.0;
+        probability_array[5][1] = 100.0;
+        probability_array[5][2] = 100.0;
+        probability_array[5][3] = 100.0;
+        probability_array[5][4] = 100.0;
+        probability_array[5][5] = 100.0;
+        probability_array[5][6] = 99.6;
+        probability_array[5][7] = 98.81;
+        probability_array[5][8] = 96.83;
+        probability_array[5][9] = 93.25;
+        probability_array[5][10] = 86.9;
+        probability_array[5][11] = 76.98;
+        probability_array[5][12] = 64.29;
+        probability_array[5][13] = 50.0;
+        probability_array[5][14] = 35.71;
+        probability_array[5][15] = 23.02;
+        probability_array[5][16] = 13.1;
+        probability_array[5][17] = 6.75;
+        probability_array[5][18] = 3.17;
+        probability_array[5][19] = 1.19;
+        probability_array[5][20] = 0.4;
+        probability_array[5][21] = 0.0;
+        probability_array[5][22] = 0.0;
+        probability_array[5][23] = 0.0;
+        probability_array[5][24] = 0.0;
+        probability_array[6][1] = 100.0;
+        probability_array[6][2] = 100.0;
+        probability_array[6][3] = 100.0;
+        probability_array[6][4] = 100.0;
+        probability_array[6][5] = 100.0;
+        probability_array[6][6] = 100.0;
+        probability_array[6][7] = 99.78;
+        probability_array[6][8] = 99.35;
+        probability_array[6][9] = 98.27;
+        probability_array[6][10] = 96.32;
+        probability_array[6][11] = 92.86;
+        probability_array[6][12] = 87.45;
+        probability_array[6][13] = 79.0;
+        probability_array[6][14] = 68.61;
+        probability_array[6][15] = 56.28;
+        probability_array[6][16] = 43.72;
+        probability_array[6][17] = 31.39;
+        probability_array[6][18] = 21.0;
+        probability_array[6][19] = 12.55;
+        probability_array[6][20] = 7.14;
+        probability_array[6][21] = 3.68;
+        probability_array[6][22] = 1.73;
+        probability_array[6][23] = 0.65;
+        probability_array[6][24] = 0.22;
+        var p_elem = document.getElementById("probability");
+        var target = document.getElementById("target").value;
+        var dice_count = document.getElementById("dice_count").value;
+        p_elem.innerHTML = "Probability: " + probability_array[dice_count][target] + "%";
+      }
+    </script>
+    <section>
+      <h1>Dragonwood Probability</h1>
+      <p>
+        <div>
+            Target: <select id="target" onchange="changeProbability()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+            </select>
+        </div>
+      </p>
+      <p>
+        <div>
+            Dice count: <select id="dice_count" onchange="changeProbability()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+      </p>
+      <p id="probability">
+        Probability:
+      </p>
+    </section>
+</html>
